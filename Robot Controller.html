@@ -13165,7 +13165,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">helper</span>
@@ -13187,7 +13187,7 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>maze-id 1-1545897454
+<pre>maze-id 1-1545952403
 [[3, 2, 2, 2, 2, 2, 2, 2, 1],
  [0, 0, 2, 2, 2, 2, 2, 0, 0],
  [2, 0, 0, 2, 2, 2, 0, 0, 2],
@@ -13216,7 +13216,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#TODO 1模拟环境的行数</span>
@@ -13226,7 +13226,7 @@ div#notebook {
 <span class="n">columns</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">env_data</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> 
 
 <span class="c1">#TODO 3取出模拟环境第三行第六列的元素</span>
-<span class="n">row_3_col_6</span> <span class="o">=</span> <span class="n">env_data</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">6</span><span class="p">]</span> 
+<span class="n">row_3_col_6</span> <span class="o">=</span> <span class="n">env_data</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">5</span><span class="p">]</span> 
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;迷宫共有&quot;</span><span class="p">,</span> <span class="n">rows</span><span class="p">,</span> <span class="s2">&quot;行&quot;</span><span class="p">,</span> <span class="n">columns</span><span class="p">,</span> <span class="s2">&quot;列，第三行第六列的元素是&quot;</span><span class="p">,</span> <span class="n">row_3_col_6</span><span class="p">)</span>
 </pre></div>
@@ -13245,7 +13245,7 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>迷宫共有 5 行 9 列，第三行第六列的元素是 0
+<pre>迷宫共有 5 行 9 列，第三行第六列的元素是 2
 </pre>
 </div>
 </div>
@@ -13268,7 +13268,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#TODO 4计算模拟环境中，第一行的的障碍物个数。</span>
@@ -13308,7 +13308,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">run</span> -i -e test.py RobotControllortTestCase.test_cal_barriers
@@ -13330,7 +13330,7 @@ div#notebook {
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>.
 ----------------------------------------------------------------------
-Ran 1 test in 0.004s
+Ran 1 test in 0.001s
 
 OK
 </pre>
@@ -13356,7 +13356,7 @@ OK
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">loc_map</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;start&quot;</span><span class="p">:(</span><span class="mi">0</span><span class="p">,</span><span class="mi">8</span><span class="p">),</span><span class="s2">&quot;destination&quot;</span><span class="p">:(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)}</span> <span class="c1">#TODO 6按照上述要求创建字典</span>
@@ -13371,7 +13371,7 @@ OK
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">run</span> -i -e test.py RobotControllortTestCase.test_cal_loc_map
@@ -13393,7 +13393,7 @@ OK
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>.
 ----------------------------------------------------------------------
-Ran 1 test in 0.006s
+Ran 1 test in 0.001s
 
 OK
 </pre>
@@ -13429,7 +13429,7 @@ OK
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">is_move_valid_special</span><span class="p">(</span><span class="n">loc</span><span class="p">,</span> <span class="n">act</span><span class="p">):</span>
@@ -13468,7 +13468,7 @@ OK
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">run</span> -i -e test.py RobotControllortTestCase.test_is_move_valid_special
@@ -13490,7 +13490,7 @@ OK
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>.
 ----------------------------------------------------------------------
-Ran 1 test in 0.004s
+Ran 1 test in 0.001s
 
 OK
 </pre>
@@ -13512,7 +13512,7 @@ OK
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">is_move_valid</span><span class="p">(</span><span class="n">env_data</span><span class="p">,</span> <span class="n">loc</span><span class="p">,</span> <span class="n">act</span><span class="p">):</span>
@@ -13551,7 +13551,7 @@ OK
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">run</span> -i -e test.py RobotControllortTestCase.test_is_move_valid
@@ -13573,7 +13573,7 @@ OK
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>.
 ----------------------------------------------------------------------
-Ran 1 test in 0.007s
+Ran 1 test in 0.001s
 
 OK
 </pre>
@@ -13602,8 +13602,8 @@ OK
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>1.一个是外部变量，一个是函数内部变量，作用域不同
-2.不会改变，因为是一个拷贝</p>
+<p>1.前者是全局变量，后者是局部变量
+2.env_data_是list结构是可变类型，所以传递的是引用，在函数内修改会改变</p>
 
 </div>
 </div>
@@ -13621,21 +13621,20 @@ OK
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## TODO 10 从头定义、实现你的函数</span>
 <span class="k">def</span> <span class="nf">valid_actions</span><span class="p">(</span><span class="n">env_data</span><span class="p">,</span><span class="n">loc</span><span class="p">):</span>
-    <span class="n">row</span><span class="p">,</span><span class="n">column</span> <span class="o">=</span> <span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
     <span class="n">act</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">if</span> <span class="p">((</span><span class="n">row</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">and</span> <span class="p">((</span><span class="n">env_data</span><span class="p">[</span><span class="n">row</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">column</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">env_data</span><span class="p">[</span><span class="n">row</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">column</span><span class="p">]</span> <span class="o">==</span> <span class="mi">3</span><span class="p">))</span> <span class="p">:</span>
-        <span class="n">act</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;u&#39;</span><span class="p">)</span>
-    <span class="k">if</span> <span class="p">((</span><span class="n">row</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">rows</span><span class="p">)</span> <span class="ow">and</span> <span class="p">((</span><span class="n">env_data</span><span class="p">[</span><span class="n">row</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="n">column</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">env_data</span><span class="p">[</span><span class="n">row</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="n">column</span><span class="p">]</span> <span class="o">==</span> <span class="mi">3</span><span class="p">)):</span>
-        <span class="n">act</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;d&#39;</span><span class="p">)</span>
-    <span class="k">if</span> <span class="p">((</span><span class="n">column</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">and</span> <span class="p">((</span><span class="n">env_data</span><span class="p">[</span><span class="n">row</span><span class="p">][</span><span class="n">column</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">env_data</span><span class="p">[</span><span class="n">row</span><span class="p">][</span><span class="n">column</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">3</span><span class="p">)):</span>
-        <span class="n">act</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;l&#39;</span><span class="p">)</span>
-    <span class="k">if</span> <span class="p">((</span><span class="n">column</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">columns</span><span class="p">)</span> <span class="ow">and</span> <span class="p">((</span><span class="n">env_data</span><span class="p">[</span><span class="n">row</span><span class="p">][</span><span class="n">column</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">env_data</span><span class="p">[</span><span class="n">row</span><span class="p">][</span><span class="n">column</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">3</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="n">is_move_valid</span><span class="p">(</span><span class="n">env_data</span><span class="p">,</span><span class="n">loc</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">):</span>
         <span class="n">act</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;r&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">is_move_valid</span><span class="p">(</span><span class="n">env_data</span><span class="p">,</span><span class="n">loc</span><span class="p">,</span><span class="s1">&#39;l&#39;</span><span class="p">):</span>
+        <span class="n">act</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;l&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">is_move_valid</span><span class="p">(</span><span class="n">env_data</span><span class="p">,</span><span class="n">loc</span><span class="p">,</span><span class="s1">&#39;u&#39;</span><span class="p">):</span>
+        <span class="n">act</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;u&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">is_move_valid</span><span class="p">(</span><span class="n">env_data</span><span class="p">,</span><span class="n">loc</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">):</span>
+        <span class="n">act</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;d&#39;</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">act</span>
 </pre></div>
 
@@ -13646,7 +13645,7 @@ OK
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">run</span> -i -e test.py RobotControllortTestCase.test_valid_actions
@@ -13668,7 +13667,7 @@ OK
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>.
 ----------------------------------------------------------------------
-Ran 1 test in 0.004s
+Ran 1 test in 0.001s
 
 OK
 </pre>
@@ -13691,40 +13690,28 @@ OK
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">##TODO 11 从头定义、实现你的函数</span>
 <span class="k">def</span> <span class="nf">move_robot</span><span class="p">(</span><span class="n">loc</span><span class="p">,</span><span class="n">act</span><span class="p">):</span>
     <span class="n">row</span><span class="p">,</span><span class="n">column</span> <span class="o">=</span> <span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
     <span class="n">dst_row</span><span class="p">,</span><span class="n">dst_column</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span><span class="mi">0</span>
-    <span class="k">if</span> <span class="n">act</span> <span class="o">==</span> <span class="s1">&#39;u&#39;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">row</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="p">(</span><span class="n">env_data</span><span class="p">[</span><span class="n">row</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">column</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2</span><span class="p">):</span>
-            <span class="k">return</span> <span class="kc">False</span>
-        <span class="k">else</span><span class="p">:</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">is_move_valid</span><span class="p">(</span><span class="n">env_data</span><span class="p">,</span><span class="n">loc</span><span class="p">,</span><span class="n">act</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">fasle</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">act</span> <span class="o">==</span> <span class="s1">&#39;u&#39;</span><span class="p">:</span>
             <span class="n">dst_row</span> <span class="o">=</span> <span class="n">row</span><span class="o">-</span><span class="mi">1</span>
             <span class="n">dst_column</span> <span class="o">=</span> <span class="n">column</span>
-    <span class="k">elif</span> <span class="n">act</span> <span class="o">==</span> <span class="s1">&#39;d&#39;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">row</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">rows</span> <span class="ow">or</span> <span class="p">(</span><span class="n">env_data</span><span class="p">[</span><span class="n">row</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="n">column</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2</span><span class="p">):</span>
-            <span class="k">return</span> <span class="kc">False</span>
-        <span class="k">else</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">act</span> <span class="o">==</span> <span class="s1">&#39;d&#39;</span><span class="p">:</span>
             <span class="n">dst_row</span> <span class="o">=</span> <span class="n">row</span><span class="o">+</span><span class="mi">1</span>
             <span class="n">dst_column</span> <span class="o">=</span> <span class="n">column</span>
-    <span class="k">elif</span> <span class="n">act</span> <span class="o">==</span> <span class="s1">&#39;l&#39;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">column</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="p">(</span><span class="n">env_data</span><span class="p">[</span><span class="n">row</span><span class="p">][</span><span class="n">column</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2</span><span class="p">):</span>
-            <span class="k">return</span> <span class="kc">False</span>
-        <span class="k">else</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">act</span> <span class="o">==</span> <span class="s1">&#39;l&#39;</span><span class="p">:</span>
             <span class="n">dst_row</span> <span class="o">=</span> <span class="n">row</span>
             <span class="n">dst_column</span> <span class="o">=</span> <span class="n">column</span><span class="o">-</span><span class="mi">1</span>
-    <span class="k">elif</span> <span class="n">act</span> <span class="o">==</span> <span class="s1">&#39;r&#39;</span> <span class="p">:</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">column</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">columns</span> <span class="ow">or</span> <span class="p">(</span><span class="n">env_data</span><span class="p">[</span><span class="n">row</span><span class="p">][</span><span class="n">column</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2</span><span class="p">):</span>
-            <span class="k">return</span> <span class="kc">False</span>
-        <span class="k">else</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">act</span> <span class="o">==</span> <span class="s1">&#39;r&#39;</span> <span class="p">:</span>
             <span class="n">dst_row</span> <span class="o">=</span> <span class="n">row</span>
             <span class="n">dst_column</span> <span class="o">=</span> <span class="n">column</span><span class="o">+</span><span class="mi">1</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="kc">False</span>
-    
     <span class="k">return</span> <span class="p">(</span><span class="n">dst_row</span><span class="p">,</span><span class="n">dst_column</span><span class="p">)</span>
 </pre></div>
 
@@ -13735,7 +13722,7 @@ OK
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">run</span> -i -e test.py RobotControllortTestCase.test_move_robot
@@ -13757,7 +13744,7 @@ OK
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>.
 ----------------------------------------------------------------------
-Ran 1 test in 0.008s
+Ran 1 test in 0.001s
 
 OK
 </pre>
@@ -13787,7 +13774,7 @@ OK
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">##TODO 12 从头实现你的函数</span>
@@ -13813,7 +13800,7 @@ OK
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 运行</span>
@@ -13836,11 +13823,15 @@ OK
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[&#39;d&#39;]
 (1, 8)
-[&#39;l&#39;]
-(1, 7)
-[&#39;d&#39;]
-(2, 7)
 [&#39;u&#39;]
+(0, 8)
+[&#39;d&#39;]
+(1, 8)
+[&#39;u&#39;]
+(0, 8)
+[&#39;d&#39;]
+(1, 8)
+[&#39;l&#39;]
 (1, 7)
 [&#39;d&#39;]
 (2, 7)
@@ -13849,6 +13840,22 @@ OK
 [&#39;r&#39;]
 (2, 7)
 [&#39;l&#39;]
+(2, 6)
+[&#39;d&#39;]
+(3, 6)
+[&#39;u&#39;]
+(2, 6)
+[&#39;d&#39;]
+(3, 6)
+[&#39;l&#39;]
+(3, 5)
+[&#39;d&#39;]
+(4, 5)
+[&#39;u&#39;]
+(3, 5)
+[&#39;r&#39;]
+(3, 6)
+[&#39;u&#39;]
 (2, 6)
 [&#39;d&#39;]
 (3, 6)
@@ -13858,7 +13865,91 @@ OK
 (3, 6)
 [&#39;u&#39;]
 (2, 6)
+[&#39;d&#39;]
+(3, 6)
+[&#39;u&#39;]
+(2, 6)
+[&#39;d&#39;]
+(3, 6)
+[&#39;u&#39;]
+(2, 6)
 [&#39;r&#39;]
+(2, 7)
+[&#39;u&#39;]
+(1, 7)
+[&#39;r&#39;]
+(1, 8)
+[&#39;u&#39;]
+(0, 8)
+[&#39;d&#39;]
+(1, 8)
+[&#39;u&#39;]
+(0, 8)
+[&#39;d&#39;]
+(1, 8)
+[&#39;l&#39;]
+(1, 7)
+[&#39;d&#39;]
+(2, 7)
+[&#39;u&#39;]
+(1, 7)
+[&#39;r&#39;]
+(1, 8)
+[&#39;l&#39;]
+(1, 7)
+[&#39;r&#39;]
+(1, 8)
+[&#39;u&#39;]
+(0, 8)
+[&#39;d&#39;]
+(1, 8)
+[&#39;l&#39;]
+(1, 7)
+[&#39;d&#39;]
+(2, 7)
+[&#39;l&#39;]
+(2, 6)
+[&#39;r&#39;]
+(2, 7)
+[&#39;l&#39;]
+(2, 6)
+[&#39;d&#39;]
+(3, 6)
+[&#39;u&#39;]
+(2, 6)
+[&#39;r&#39;]
+(2, 7)
+[&#39;u&#39;]
+(1, 7)
+[&#39;d&#39;]
+(2, 7)
+[&#39;u&#39;]
+(1, 7)
+[&#39;r&#39;]
+(1, 8)
+[&#39;l&#39;]
+(1, 7)
+[&#39;r&#39;]
+(1, 8)
+[&#39;u&#39;]
+(0, 8)
+[&#39;d&#39;]
+(1, 8)
+[&#39;l&#39;]
+(1, 7)
+[&#39;r&#39;]
+(1, 8)
+[&#39;l&#39;]
+(1, 7)
+[&#39;r&#39;]
+(1, 8)
+[&#39;l&#39;]
+(1, 7)
+[&#39;d&#39;]
+(2, 7)
+[&#39;u&#39;]
+(1, 7)
+[&#39;d&#39;]
 (2, 7)
 [&#39;l&#39;]
 (2, 6)
@@ -13870,6 +13961,82 @@ OK
 (1, 8)
 [&#39;l&#39;]
 (1, 7)
+[&#39;d&#39;]
+(2, 7)
+[&#39;u&#39;]
+(1, 7)
+[&#39;r&#39;]
+(1, 8)
+[&#39;l&#39;]
+(1, 7)
+[&#39;d&#39;]
+(2, 7)
+[&#39;u&#39;]
+(1, 7)
+[&#39;r&#39;]
+(1, 8)
+[&#39;l&#39;]
+(1, 7)
+[&#39;r&#39;]
+(1, 8)
+[&#39;u&#39;]
+(0, 8)
+[&#39;d&#39;]
+(1, 8)
+[&#39;u&#39;]
+(0, 8)
+[&#39;d&#39;]
+(1, 8)
+[&#39;l&#39;]
+(1, 7)
+[&#39;d&#39;]
+(2, 7)
+[&#39;u&#39;]
+(1, 7)
+[&#39;r&#39;]
+(1, 8)
+[&#39;u&#39;]
+(0, 8)
+[&#39;d&#39;]
+(1, 8)
+[&#39;u&#39;]
+(0, 8)
+[&#39;d&#39;]
+(1, 8)
+[&#39;u&#39;]
+(0, 8)
+[&#39;d&#39;]
+(1, 8)
+[&#39;u&#39;]
+(0, 8)
+[&#39;d&#39;]
+(1, 8)
+[&#39;l&#39;]
+(1, 7)
+[&#39;r&#39;]
+(1, 8)
+[&#39;l&#39;]
+(1, 7)
+[&#39;d&#39;]
+(2, 7)
+[&#39;u&#39;]
+(1, 7)
+[&#39;r&#39;]
+(1, 8)
+[&#39;l&#39;]
+(1, 7)
+[&#39;d&#39;]
+(2, 7)
+[&#39;u&#39;]
+(1, 7)
+[&#39;r&#39;]
+(1, 8)
+[&#39;u&#39;]
+(0, 8)
+[&#39;d&#39;]
+(1, 8)
+[&#39;l&#39;]
+(1, 7)
 [&#39;r&#39;]
 (1, 8)
 [&#39;l&#39;]
@@ -13877,6 +14044,166 @@ OK
 [&#39;r&#39;]
 (1, 8)
 [&#39;l&#39;]
+(1, 7)
+[&#39;d&#39;]
+(2, 7)
+[&#39;u&#39;]
+(1, 7)
+[&#39;r&#39;]
+(1, 8)
+[&#39;l&#39;]
+(1, 7)
+[&#39;r&#39;]
+(1, 8)
+[&#39;u&#39;]
+(0, 8)
+[&#39;d&#39;]
+(1, 8)
+[&#39;l&#39;]
+(1, 7)
+[&#39;r&#39;]
+(1, 8)
+[&#39;l&#39;]
+(1, 7)
+[&#39;r&#39;]
+(1, 8)
+[&#39;u&#39;]
+(0, 8)
+[&#39;d&#39;]
+(1, 8)
+[&#39;u&#39;]
+(0, 8)
+[&#39;d&#39;]
+(1, 8)
+[&#39;l&#39;]
+(1, 7)
+[&#39;r&#39;]
+(1, 8)
+[&#39;l&#39;]
+(1, 7)
+[&#39;r&#39;]
+(1, 8)
+[&#39;l&#39;]
+(1, 7)
+[&#39;r&#39;]
+(1, 8)
+[&#39;u&#39;]
+(0, 8)
+[&#39;d&#39;]
+(1, 8)
+[&#39;u&#39;]
+(0, 8)
+[&#39;d&#39;]
+(1, 8)
+[&#39;u&#39;]
+(0, 8)
+[&#39;d&#39;]
+(1, 8)
+[&#39;l&#39;]
+(1, 7)
+[&#39;r&#39;]
+(1, 8)
+[&#39;l&#39;]
+(1, 7)
+[&#39;d&#39;]
+(2, 7)
+[&#39;u&#39;]
+(1, 7)
+[&#39;d&#39;]
+(2, 7)
+[&#39;u&#39;]
+(1, 7)
+[&#39;d&#39;]
+(2, 7)
+[&#39;u&#39;]
+(1, 7)
+[&#39;d&#39;]
+(2, 7)
+[&#39;u&#39;]
+(1, 7)
+[&#39;r&#39;]
+(1, 8)
+[&#39;l&#39;]
+(1, 7)
+[&#39;d&#39;]
+(2, 7)
+[&#39;u&#39;]
+(1, 7)
+[&#39;d&#39;]
+(2, 7)
+[&#39;u&#39;]
+(1, 7)
+[&#39;r&#39;]
+(1, 8)
+[&#39;u&#39;]
+(0, 8)
+[&#39;d&#39;]
+(1, 8)
+[&#39;u&#39;]
+(0, 8)
+[&#39;d&#39;]
+(1, 8)
+[&#39;l&#39;]
+(1, 7)
+[&#39;r&#39;]
+(1, 8)
+[&#39;u&#39;]
+(0, 8)
+[&#39;d&#39;]
+(1, 8)
+[&#39;l&#39;]
+(1, 7)
+[&#39;r&#39;]
+(1, 8)
+[&#39;u&#39;]
+(0, 8)
+[&#39;d&#39;]
+(1, 8)
+[&#39;u&#39;]
+(0, 8)
+[&#39;d&#39;]
+(1, 8)
+[&#39;l&#39;]
+(1, 7)
+[&#39;d&#39;]
+(2, 7)
+[&#39;u&#39;]
+(1, 7)
+[&#39;r&#39;]
+(1, 8)
+[&#39;u&#39;]
+(0, 8)
+[&#39;d&#39;]
+(1, 8)
+[&#39;l&#39;]
+(1, 7)
+[&#39;d&#39;]
+(2, 7)
+[&#39;l&#39;]
+(2, 6)
+[&#39;d&#39;]
+(3, 6)
+[&#39;u&#39;]
+(2, 6)
+[&#39;d&#39;]
+(3, 6)
+[&#39;u&#39;]
+(2, 6)
+[&#39;d&#39;]
+(3, 6)
+[&#39;u&#39;]
+(2, 6)
+[&#39;r&#39;]
+(2, 7)
+[&#39;u&#39;]
+(1, 7)
+[&#39;r&#39;]
+(1, 8)
+[&#39;l&#39;]
+(1, 7)
+[&#39;d&#39;]
+(2, 7)
+[&#39;u&#39;]
 (1, 7)
 [&#39;d&#39;]
 (2, 7)
@@ -13886,151 +14213,23 @@ OK
 (3, 6)
 [&#39;l&#39;]
 (3, 5)
-[&#39;r&#39;]
-(3, 6)
-[&#39;u&#39;]
-(2, 6)
-[&#39;r&#39;]
-(2, 7)
-[&#39;u&#39;]
-(1, 7)
-[&#39;r&#39;]
-(1, 8)
-[&#39;l&#39;]
-(1, 7)
-[&#39;r&#39;]
-(1, 8)
-[&#39;l&#39;]
-(1, 7)
 [&#39;d&#39;]
-(2, 7)
+(4, 5)
+[&#39;l&#39;]
+(4, 4)
+[&#39;r&#39;]
+(4, 5)
 [&#39;u&#39;]
-(1, 7)
-[&#39;r&#39;]
-(1, 8)
-[&#39;l&#39;]
-(1, 7)
-[&#39;r&#39;]
-(1, 8)
-[&#39;l&#39;]
-(1, 7)
+(3, 5)
 [&#39;d&#39;]
-(2, 7)
+(4, 5)
 [&#39;l&#39;]
-(2, 6)
+(4, 4)
 [&#39;r&#39;]
-(2, 7)
-[&#39;l&#39;]
-(2, 6)
-[&#39;r&#39;]
-(2, 7)
-[&#39;l&#39;]
-(2, 6)
-[&#39;r&#39;]
-(2, 7)
-[&#39;l&#39;]
-(2, 6)
-[&#39;r&#39;]
-(2, 7)
-[&#39;l&#39;]
-(2, 6)
-[&#39;d&#39;]
-(3, 6)
+(4, 5)
 [&#39;u&#39;]
-(2, 6)
-[&#39;r&#39;]
-(2, 7)
-[&#39;l&#39;]
-(2, 6)
-[&#39;r&#39;]
-(2, 7)
-[&#39;l&#39;]
-(2, 6)
-[&#39;d&#39;]
-(3, 6)
-[&#39;l&#39;]
 (3, 5)
 [&#39;r&#39;]
-(3, 6)
-[&#39;u&#39;]
-(2, 6)
-[&#39;r&#39;]
-(2, 7)
-[&#39;u&#39;]
-(1, 7)
-[&#39;r&#39;]
-(1, 8)
-[&#39;l&#39;]
-(1, 7)
-[&#39;d&#39;]
-(2, 7)
-[&#39;u&#39;]
-(1, 7)
-[&#39;r&#39;]
-(1, 8)
-[&#39;l&#39;]
-(1, 7)
-[&#39;d&#39;]
-(2, 7)
-[&#39;l&#39;]
-(2, 6)
-[&#39;d&#39;]
-(3, 6)
-[&#39;u&#39;]
-(2, 6)
-[&#39;d&#39;]
-(3, 6)
-[&#39;u&#39;]
-(2, 6)
-[&#39;r&#39;]
-(2, 7)
-[&#39;u&#39;]
-(1, 7)
-[&#39;d&#39;]
-(2, 7)
-[&#39;u&#39;]
-(1, 7)
-[&#39;r&#39;]
-(1, 8)
-[&#39;l&#39;]
-(1, 7)
-[&#39;d&#39;]
-(2, 7)
-[&#39;l&#39;]
-(2, 6)
-[&#39;d&#39;]
-(3, 6)
-[&#39;u&#39;]
-(2, 6)
-[&#39;r&#39;]
-(2, 7)
-[&#39;l&#39;]
-(2, 6)
-[&#39;r&#39;]
-(2, 7)
-[&#39;u&#39;]
-(1, 7)
-[&#39;r&#39;]
-(1, 8)
-[&#39;l&#39;]
-(1, 7)
-[&#39;d&#39;]
-(2, 7)
-[&#39;u&#39;]
-(1, 7)
-[&#39;d&#39;]
-(2, 7)
-[&#39;u&#39;]
-(1, 7)
-[&#39;d&#39;]
-(2, 7)
-[&#39;l&#39;]
-(2, 6)
-[&#39;r&#39;]
-(2, 7)
-[&#39;l&#39;]
-(2, 6)
-[&#39;d&#39;]
 (3, 6)
 [&#39;u&#39;]
 (2, 6)
@@ -14046,43 +14245,35 @@ OK
 (4, 5)
 [&#39;l&#39;]
 (4, 4)
-[&#39;r&#39;]
-(4, 5)
 [&#39;l&#39;]
+(4, 3)
+[&#39;r&#39;]
 (4, 4)
 [&#39;l&#39;]
 (4, 3)
 [&#39;u&#39;]
 (3, 3)
+[&#39;l&#39;]
+(3, 2)
+[&#39;r&#39;]
+(3, 3)
+[&#39;d&#39;]
+(4, 3)
+[&#39;u&#39;]
+(3, 3)
+[&#39;d&#39;]
+(4, 3)
+[&#39;u&#39;]
+(3, 3)
 [&#39;d&#39;]
 (4, 3)
 [&#39;u&#39;]
 (3, 3)
 [&#39;l&#39;]
 (3, 2)
-[&#39;u&#39;]
-(2, 2)
-[&#39;l&#39;]
-(2, 1)
-[&#39;u&#39;]
-(1, 1)
-[&#39;d&#39;]
-(2, 1)
-[&#39;u&#39;]
-(1, 1)
-[&#39;d&#39;]
-(2, 1)
 [&#39;r&#39;]
-(2, 2)
-[&#39;d&#39;]
-(3, 2)
-[&#39;u&#39;]
-(2, 2)
-[&#39;d&#39;]
-(3, 2)
-[&#39;u&#39;]
-(2, 2)
-[&#39;d&#39;]
+(3, 3)
+[&#39;l&#39;]
 (3, 2)
 [&#39;r&#39;]
 (3, 3)
@@ -14096,9 +14287,77 @@ OK
 (3, 3)
 [&#39;l&#39;]
 (3, 2)
+[&#39;r&#39;]
+(3, 3)
+[&#39;l&#39;]
+(3, 2)
 [&#39;u&#39;]
 (2, 2)
+[&#39;l&#39;]
+(2, 1)
+[&#39;u&#39;]
+(1, 1)
 [&#39;d&#39;]
+(2, 1)
+[&#39;u&#39;]
+(1, 1)
+[&#39;l&#39;]
+(1, 0)
+[&#39;r&#39;]
+(1, 1)
+[&#39;d&#39;]
+(2, 1)
+[&#39;r&#39;]
+(2, 2)
+[&#39;l&#39;]
+(2, 1)
+[&#39;u&#39;]
+(1, 1)
+[&#39;l&#39;]
+(1, 0)
+[&#39;r&#39;]
+(1, 1)
+[&#39;d&#39;]
+(2, 1)
+[&#39;r&#39;]
+(2, 2)
+[&#39;l&#39;]
+(2, 1)
+[&#39;r&#39;]
+(2, 2)
+[&#39;d&#39;]
+(3, 2)
+[&#39;u&#39;]
+(2, 2)
+[&#39;l&#39;]
+(2, 1)
+[&#39;r&#39;]
+(2, 2)
+[&#39;l&#39;]
+(2, 1)
+[&#39;r&#39;]
+(2, 2)
+[&#39;d&#39;]
+(3, 2)
+[&#39;r&#39;]
+(3, 3)
+[&#39;d&#39;]
+(4, 3)
+[&#39;u&#39;]
+(3, 3)
+[&#39;d&#39;]
+(4, 3)
+[&#39;u&#39;]
+(3, 3)
+[&#39;l&#39;]
+(3, 2)
+[&#39;r&#39;]
+(3, 3)
+[&#39;d&#39;]
+(4, 3)
+[&#39;u&#39;]
+(3, 3)
+[&#39;l&#39;]
 (3, 2)
 [&#39;u&#39;]
 (2, 2)
@@ -14108,9 +14367,13 @@ OK
 (1, 1)
 [&#39;l&#39;]
 (1, 0)
+[&#39;r&#39;]
+(1, 1)
+[&#39;l&#39;]
+(1, 0)
 [&#39;u&#39;]
 (0, 0)
-在第137个回合找到宝藏！
+在第275个回合找到宝藏！
 </pre>
 </div>
 </div>
@@ -14147,7 +14410,7 @@ OK
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">##TODO 13 实现你的算法</span>
@@ -14166,6 +14429,19 @@ OK
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 </div>
     </div>
   </div>
